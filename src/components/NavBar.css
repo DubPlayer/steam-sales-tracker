@@ -1,0 +1,50 @@
+.navbar {
+    background: linear-gradient(-45deg, #1a1d23, #131e2a );
+    background-size: 400% 400%;
+    animation: navbarGradient 10s ease infinite; /* Animación de gradiente */
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Asegura que la navbar esté encima de otros elementos */
+}
+
+.navbar .steam-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.navbar .steam-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.navbar .github-logo a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar .github-logo a:hover {
+    color: #61dafb;
+}
+
+/* Animación del gradiente */
+@keyframes navbarGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
