@@ -1,7 +1,7 @@
 .navbar {
     background: linear-gradient(-45deg, #1a1d23, #131e2a );
     background-size: 400% 400%;
-    animation: navbarGradient 10s ease infinite; /* Animación de gradiente */
+    animation: navbarGradient 10s ease infinite; 
     width: 100vw;
     height: 100px;
     position: fixed;
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000; /* Asegura que la navbar esté encima de otros elementos */
+    z-index: 1000; 
 }
 
 .navbar .steam-logo {
@@ -36,7 +36,7 @@
     color: #61dafb;
 }
 
-/* Animación del gradiente */
+
 @keyframes navbarGradient {
     0% {
         background-position: 0% 50%;
@@ -46,5 +46,25 @@
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        height: 80px; /* Reduce la altura de la barra */
+        padding: 0 10px;
+    }
+
+    .steam-logo img {
+        height: 60%; /* Ajusta el tamaño del logo */
+    }
+
+    .navbar h2 {
+        font-size: 18px; /* Reduce el tamaño del texto */
+    }
+
+    .github-logo a {
+        font-size: 40px; /* Ajusta el tamaño del ícono de GitHub */
     }
 }

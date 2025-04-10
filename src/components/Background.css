@@ -28,3 +28,9 @@ html, body {
       background-position: 0% 50%;
   }
 }
+
+@media (max-width: 768px) {
+  .background {
+      background-size: 200% 200%; /* Ajusta el tamaño del gradiente */
+  }
+}

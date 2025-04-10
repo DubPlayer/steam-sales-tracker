@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Background from "../components/background";
+import Background from "../components/Background";
 import NavBar from "../components/NavBar";
 import Salecontainer from "../components/Salescontainer";
 import "../components/Salecontainer.css";

@@ -7,12 +7,12 @@
     background-color: #00000073;
     border-radius: 10px;
     color: white;
-    margin-top: 80px; /* Añade un margen superior para separar la tabla del encabezado */
+    margin-top: 80px;
 }
 
 .header {
-    text-align: center; /* Centra el texto del encabezado */
-    margin-bottom: 20px; /* Añade un margen inferior para separar el encabezado de la tabla */
+    text-align: center; 
+    margin-bottom: 20px;
 }
 
 .sales-table {
@@ -23,7 +23,7 @@
     background-color: #1f1f1f;
     color: white;
     border: 1px solid #333;
-    table-layout: fixed; /* Fija el tamaño de las columnas */
+    table-layout: fixed;
 }
 
 .sales-table th,
@@ -31,10 +31,10 @@
     padding: 10px;
     text-align: center;
     border: 1px solid #333;
-    overflow: hidden; /* Oculta el contenido desbordado */
-    text-overflow: ellipsis; /* Agrega "..." al texto largo si no hay espacio */
-    white-space: normal; /* Permite que el texto se divida en varias líneas */
-    word-wrap: break-word; /* Divide las palabras largas si es necesario */
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+    word-wrap: break-word;
 }
 
 .sales-table th {
@@ -47,19 +47,19 @@
 }
 
 .thumbnail {
-    width: 40%; /* La imagen ocupará todo el ancho de la celda */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 150px; /* Tamaño máximo para evitar que sea demasiado grande */
-    object-fit: contain; /* Ajusta la imagen dentro del espacio disponible */
-    border-radius: 5px; /* Opcional: bordes redondeados */
+    width: 40%; 
+    height: auto; 
+    max-height: 150px; 
+    object-fit: contain; 
+    border-radius: 5px; 
 }
 
 .filters {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaciado entre los elementos */
-    margin-bottom: 20px; /* Espaciado inferior para separar del resto del contenido */
+    gap: 10px;
+    margin-bottom: 20px; 
     padding: 10px;
     background-color: #2a2a2a; /* Fondo oscuro */
     border-radius: 8px; /* Bordes redondeados */
@@ -126,3 +126,69 @@
     font-weight: bold;
 }
 
+/* General adjustments for smaller screens */
+@media (max-width: 768px) {
+    .sale-container {
+        padding: 10px;
+        margin-top: 500px; /* Aumenta el margen superior para pantallas pequeñas */
+    }
+
+    .sales-table {
+        width: 100%;
+        font-size: 12px; /* Reduce el tamaño de fuente */
+    }
+
+    .sales-table th,
+    .sales-table td {
+        padding: 5px;
+    }
+
+    .thumbnail {
+        width: 60%; /* Ajusta el tamaño de las imágenes */
+        max-height: 100px;
+    }
+
+    .filters {
+        flex-direction: column; /* Cambia los filtros a una columna */
+        gap: 5px; /* Reduce el espacio entre los elementos */
+    }
+
+    .filters label {
+        font-size: 14px; /* Reduce el tamaño de fuente */
+    }
+
+    .filters select {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .pagination {
+        flex-direction: column; /* Cambia los botones de paginación a una columna */
+        gap: 5px;
+    }
+
+    .pagination button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .pagination span {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .sale-container {
+        margin-top: 700px; /* Aumenta aún más el margen superior para teléfonos */
+    }
+
+    .pagination button {
+        font-size: 10px; /* Reduce aún más el tamaño de fuente */
+        padding: 5px 10px; /* Ajusta el tamaño del botón */
+    }
+
+    .pagination span {
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+}
