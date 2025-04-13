@@ -137,7 +137,7 @@
     
     .sale-container {
         padding: 10px;
-        margin-top: 500px; /* Aumenta el margen superior para pantallas pequeñas */
+        margin-top: 350px; /* Aumenta el margen superior para pantallas pequeñas */
     }
 
     .sales-table {
@@ -188,7 +188,7 @@
 /* Ajustes para pantallas muy pequeñas (teléfonos) */
 @media (max-width: 480px) {
     .sale-container {
-        margin-top: 700px; /* Aumenta aún más el margen superior para teléfonos */
+        margin-top: 350px; /* Aumenta aún más el margen superior para teléfonos */
     }
 
     .pagination {
