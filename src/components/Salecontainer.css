@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #00000073;
+    padding: 15px;
+    background-color: #1e1e1e73;
     border-radius: 10px;
     color: white;
     margin-top: 80px;
@@ -92,12 +92,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaciado entre los botones */
+    gap: 5px; /* Espaciado entre los botones */
     margin-top: 20px; /* Espaciado superior para separar de la tabla */
+    padding: 10px;
 }
 
+.pagination span {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
 .pagination button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -121,13 +127,14 @@
 }
 
 .pagination span {
-    font-size: 16px;
+    font-size: 6px;
     color: white;
     font-weight: bold;
 }
 
 /* General adjustments for smaller screens */
 @media (max-width: 768px) {
+    
     .sale-container {
         padding: 10px;
         margin-top: 500px; /* Aumenta el margen superior para pantallas pequeñas */
@@ -163,8 +170,9 @@
     }
 
     .pagination {
-        flex-direction: column; /* Cambia los botones de paginación a una columna */
-        gap: 5px;
+        flex-direction: row; /* Mantén los botones en una fila horizontal */
+        flex-wrap: wrap; /* Permite que los botones se ajusten si no caben */
+        gap: 5px; /* Espaciado entre los botones */
     }
 
     .pagination button {
@@ -183,9 +191,15 @@
         margin-top: 700px; /* Aumenta aún más el margen superior para teléfonos */
     }
 
+    .pagination {
+        flex-direction: row; /* Mantén los botones en una fila horizontal */
+        flex-wrap: wrap; /* Permite que los botones se ajusten si no caben */
+        gap: 5px; /* Espaciado entre los botones */
+    }
+
     .pagination button {
-        font-size: 10px; /* Reduce aún más el tamaño de fuente */
-        padding: 5px 10px; /* Ajusta el tamaño del botón */
+        font-size: 8px; /* Reduce aún más el tamaño de fuente */
+        padding: 4px 6px; /* Ajusta el tamaño del botón */
     }
 
     .pagination span {

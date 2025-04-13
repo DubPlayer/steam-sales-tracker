@@ -65,6 +65,14 @@
     }
 
     .github-logo a {
-        font-size: 40px; /* Ajusta el tamaño del ícono de GitHub */
+        transform: scale(0.8); /* Reduce el tamaño del ícono de GitHub */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .github-logo a {
+        transform: scale(0.2); /* Reduce aún más el tamaño del ícono */
+        padding: 0 6px; /* Reduce el espaciado */
     }
 }

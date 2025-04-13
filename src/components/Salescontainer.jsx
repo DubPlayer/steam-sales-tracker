@@ -86,6 +86,9 @@ function Salecontainer() {
                 <option value="high-rating">Steam Rating: High to Low</option>
             </select>
         </div>
+         <span>
+                Page {currentPage} of {totalPages}
+            </span>
         <div className="pagination">
             <button onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>
                 First
@@ -93,21 +96,21 @@ function Salecontainer() {
             <button onClick={handlePreviousPage} disabled={currentPage === 1}>
                 Previous
             </button>
-            <button
-                onClick={() => setCurrentPage((prevPage) => Math.max(prevPage - 10, 1))}
-                disabled={currentPage <= 10}
-            >
-                -10
-            </button>
+           
             <button
                 onClick={() => setCurrentPage((prevPage) => Math.max(prevPage - 25, 1))}
                 disabled={currentPage <= 25}
             >
                 -25
             </button>
-            <span>
-                Page {currentPage} of {totalPages}
-            </span>
+            
+            <button
+                onClick={() => setCurrentPage((prevPage) => Math.max(prevPage - 10, 1))}
+                disabled={currentPage <= 10}
+            >
+                -10
+            </button>
+           
             <button
                 onClick={() => setCurrentPage((prevPage) => Math.min(prevPage + 10, totalPages))}
                 disabled={currentPage + 10 > totalPages}
